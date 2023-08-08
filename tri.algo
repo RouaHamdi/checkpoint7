@@ -1,0 +1,24 @@
+
+
+
+
+ALGORITHM checkpoint7
+VAR
+    i,j :INTEGER
+    
+BEGIN
+    BEGIN
+        n := tab.length;
+        FOR i FROM 0 TO n- 1 STEP 1  DO
+            FOR j  FROM 0 TO n-i-1 STEP 1  DO
+                IF (tab[j] > tab[j+1]) THEN
+                    elem:=tab[j] 
+                    tab[j]=tab[j+1]
+                    tab[j+1]=elem
+
+                END_IF
+        END_FOR
+    END_FOR
+END
+
+END
